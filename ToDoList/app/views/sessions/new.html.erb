@@ -1,0 +1,7 @@
+<%= form_for @user, url: {controller: "sessions", action: "create"} do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.button "Sign In" %>
+<% end %>
